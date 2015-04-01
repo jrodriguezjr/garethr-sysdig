@@ -20,7 +20,7 @@ class sysdig::install {
 
       $dependencies = [
         Apt::Source['sysdig'],
-        Package["linux-headers-${::kernelrelease}"],
+        Package["linux-headers"],
       ]
     }
     'RedHat': {
