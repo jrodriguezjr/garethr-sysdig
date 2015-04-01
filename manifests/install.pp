@@ -32,7 +32,7 @@ class sysdig::install {
         gpgcheck => 0,
       }
 
-      ensure_packages(["kernel-devel-${::kernelrelease}"])
+      ensure_packages(["kernel-devel"])
 
       $dependencies = [ Yumrepo['sysdig'], Class['epel'] ]
     }
